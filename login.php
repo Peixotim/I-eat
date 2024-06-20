@@ -2,8 +2,9 @@
 $hostname =  "localhost";
 $username = "root";
 $password = "";
+$hostname = "I_eat";
 
-$mysqli = new mysqli($hostname, $username, $password,);
+$mysqli = new mysqli($hostname, $username, $password,$hostname);
 if ($mysqli->connect_error) {
     echo "Falha na conexão" . $mysqli->connect_error;
 }
