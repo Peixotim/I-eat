@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     <div class="container" id="container">
         <div class="form-container Registrar">
-            <form>
+            <form method="post" action="http://localhost/ieat/login.php">
                 <h1>Crie Sua Conta!</h1>
                 <input type="text" placeholder="Nome" name="nome"required>
                 <input type="email" placeholder="Email" name="email" required>
@@ -47,7 +47,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             </form>
         </div>
         <div class="form-container login">
-            <form>
+            <form method="post" action="http://localhost/ieat/login.php">
                 <h1>Faça seu login!</h1>
                 <input type="email" placeholder="Email"  name="email" required>
                 <input type="password" placeholder="Senha" name="senha" required>
